@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from felchat_v2.views import main
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', main, name='main'),
 ]
